@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto1</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="peliculas.html">peliculas</a></li>
+                    <li><a href="series.html">series</a></li>
+                    <li><a href="anime.html">anime</a></li>
+                </ul>
+                <p>Donde Encontrar Mas Entretenimiento </p>
+                <ol>
+                    <li><a href="https://www.pelisplus2.me/" target="_blank">Mas peliculas</a></li>
+                    <li><a href="https://seriesflix.to/" target="_blank">Mas series</a></li>
+                    <li><a href="https://www3.animeflv.net/" target="_blank">Mas animes</a></li>
+                </ol>
+            </nav>
+            <hr>
+        </header>
+        <h1>Contacto</h1>
+        <img src="img/contacto.jpg" alt="">
+        <main>
+
+            <form class="contacto" action="">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+    
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+    
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea  id="mensaje"></textarea>
+    
+                </fieldset>
+                    
+    
+                
+                <fieldset>
+                    <legend>Contacto</legend>
+    
+                    <p>Como desea ser Contactado:</p>
+    
+                    <div class="forma-contacto">
+                        <label for="telefono">Teléfono</label>
+                        <input type="radio" name="contacto" value="telefono" id="telefono">
+    
+                        <label for="correo">E-mail</label>
+                        <input type="radio" name="contacto" value="correo" id="correo">
+                    </div>
+    
+                    <p>Si eligió Teléfono, elija la fecha y la hora</p>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha">
+    
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" min="09:00" max="18:00">
+    
+         
+                </fieldset>
+                <p>Esta página web es propiedad y está operado por yonjar alfredo moreno. le dara uso responsable de este entretenimiento y no promuve su distribucion .Esta página web ofrece a los visitantes entretenimiento en peliculas, series, anime. Al acceder o usar la página web de nuestro servicio, usted aprueba que haya leído, entendido y aceptado estar sujeto a estos Términos: <input type="checkbox"></p>
+                
+                <input type="submit" value="Enviar" class="boton boton-verde">
+    
+            </form>
+        </main>
+        <footer>
+            <p>Yonjar Alfredo Moreno Moreno &copy;</p>
+            <p>&phone;3127162321</p>
+            <p>&#10156;Medellin-Ant</p>
+            <!--https://cesde.webex.com/cesde-es/url.php?frompanel=false&gourl=https://www.toptal.com/designers/htmlarrows/symbols-->
+            <p>&#9787; <a href="contacto.html">Contacto</a></p>
+        </footer>
+    </body>
+</html>
