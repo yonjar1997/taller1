@@ -1,5 +1,50 @@
 p {
     font-size: 20px;
     font-family: 'Redressed', cursive;
-    color:rgba(red, green, blue, alpha)
+    color: red;
+    
+}
+
+h1{
+    font-weight: bold;
+    font-size: 60px;
+    color: blue;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+body{
+    background-color: gray;
+}
+
+.footer{
+    color: white;
+}
+
+/**  fondo de serie**/
+
+.serie{
+    background-image: url(img/serie.jpg) ;
+}
+
+.anime{
+    background-image: url(img/dragon_ball_super_01.jpg);
+}
+
+.pagina_uno{
+    font-weight: bold;
+    color: blanchedalmond;
+}
+.parrafo_uno{
+    font-style: italic;
+    color: green;
+}
+.parrafo_dos{
+    font-weight: bold;
+    font-style: italic;
+    color: greenyellow;
 }
