@@ -4,27 +4,63 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Entertaiment center</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet"> 
+        <title>Proyecto1</title>
+
         <link rel="stylesheet" href="style.css">
+       
+
+        <script src="https://kit.fontawesome.com/5573449726.js" crossorigin="anonymous"></script>
+         <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     </head>
     <body>
         <header>
             
-            <nav>
-                <ul>
-                    <li><a href="contacto.html">contacto</a></li>
-                    <li><a href="peliculas.html">peliculas</a></li>
-                    <li><a href="series.html">series</a></li>
-                    <li><a href="anime.html">anime</a></li>
-                </ul>
-                <p>Donde Encontrar Mas Entretenimiento </p>
-                <ol>
-                    <li><a href="https://www.pelisplus2.me/" target="_blank">Mas peliculas</a></li>
-                    <li><a href="https://seriesflix.to/" target="_blank">Mas series</a></li>
-                    <li><a href="https://www3.animeflv.net/" target="_blank">Mas animes</a></li>
-                </ol>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><i class="fas fa-compact-disc fa-2x fa-spin"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="peliculas.html">Peliculas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="series.html">series</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="anime.html">anime</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mas Diversion
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="https://www.pelisplus2.me/" target="_blank">Mas Peliculas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://seriesflix.to/" target="_blank">Mas series</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="https://www3.animeflv.net/" target="_blank">Mas Anime</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
             </nav>
             <hr>
         </header>
@@ -68,12 +104,78 @@
             <audio src="audio/one.mp3" controls></audio>
             <video src="video/top.mp4" controls></video> -->
         </main>
-        <footer>
-            <p class="footer">Yonjar Alfredo Moreno Moreno &copy;</p>
-            <p class="footer">&phone;3127162321</p>
-            <p class="footer">&#10156;Medellin-Ant</p>
-            <!--https://cesde.webex.com/cesde-es/url.php?frompanel=false&gourl=https://www.toptal.com/designers/htmlarrows/symbols-->
-            <p class="footer">&#9787; <a href="contacto.html" class="footer">Contacto</a></p>
+       <footer>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-6 footer-column">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <span class="footer-title">Entrenimiento </span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="peliculas.html">Peliculas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="series.html">Series</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="anime.html">Anime</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 footer-column">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <span class="footer-title">Contacto</span>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link"><i class="fas fa-phone"></i>+57(3127162321)</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html"><i class="fas fa-comments"></i>Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>yonjar1997@gmail.com</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-images"></i>wireframe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-4 box">
+                        <span class="copyright quick-links">Copyright &copy; Entretenimiento <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                        </span>
+                    </div>
+                    <div class="col-md-4 box">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/yonjara" target="_blank">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://m.facebook.com/yonjar.morenomoreno/" target="_blank">
+                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/yonjar-moreno-477514206/?originalSubdomain=co" target="_blank">
+                                    <i class="fab fa-linkedin-in fa-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     </body>
 </html>
