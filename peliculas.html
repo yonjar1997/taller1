@@ -13,7 +13,7 @@
          <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="fondo">
         <header>
             
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,16 +28,19 @@
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
                             style="--bs-scroll-height: 100px;">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="peliculas.html">Peliculas</a>
+                                <a class="nav-link active" href="peliculas.html">Peliculas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="series.html">series</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="anime.html">anime</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">contacto</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -64,32 +67,73 @@
             </nav>
             <hr>
         </header>
-        <h1>Series</h1>
-        <img src="img" alt="">
+        <h1 class="text-center">Peliculas</h1>
+        <div id="carouselExampleCaptions" class="carousel slide col-8 offset-2" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="https://i.ytimg.com/vi/-uDn-80iExM/hqdefault.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Top 1</h5>
+                <p class="pelicula">Benjamin, un joven alemán experto en informática, se une a un grupo subversivo de hackers</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="http://guiasaludable.net/wp-content/uploads/2019/04/club_de_la_pelea.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Top 2</h5>
+                <p class="pelicula">Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="http://photos1.blogger.com/blogger/5704/2521/1600/trailer_home.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Top 3</h5>
+                <p class="pelicula">Un joven estudiante de psicología viaja en el tiempo para transformar el pasado y alterar el futuro de sus amigos.</p>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        
         <main>
-
-            <h3>¿por que se llama series?</h3>
             
-            <p>Película es un término que proviene del latín pellicŭla y que tiene diversos usos. Su acepción más habitual está vinculada a la obra cinematográfica que suele narrar una historia escrita o adaptada por un guionista y cuya puesta en escena depende de un director.
+            <div class="p-4">
+                <div class="row">
+                    <div id="list-example" class="list-group col-4">
+                        <a class="list-group-item list-group-item-action active" href="#list-item-1">¿por que se llama peliculas?</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">A nivel general</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">Además de todo lo indicado</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">cacion de pelicula</a>
+                        </div>
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example col border p-3 rounded altura" tabindex="0">
+                        <h4 id="list-item-1">¿por que se llama peliculas?</h4>
+                        <p>Película es un término que proviene del latín pellicŭla y que tiene diversos usos. Su acepción más habitual está vinculada a la obra cinematográfica que suele narrar una historia escrita o adaptada por un guionista y cuya puesta en escena depende de un director.
 
-                Película
-                La película puede contar con la participación de actores que interpretan a los distintos personajes de la historia o presentar dibujos animados mediante distintos tipos de técnicas. Es importante tener en cuenta que la película es la obra en sí misma, más allá de su formato y del lugar de exhibición (es decir, una película puede ser proyectada en una sala de cine o ser vista en un televisor en el hogar).
+                        Película
+                        La película puede contar con la participación de actores que interpretan a los distintos personajes de la historia o presentar dibujos animados mediante distintos tipos de técnicas. Es importante tener en cuenta que la película es la obra en sí misma, más allá de su formato y del lugar de exhibición (es decir, una película puede ser proyectada en una sala de cine o ser vista en un televisor en el hogar)</p>
+                        <h4 id="list-item-2">A nivel general</h4>
+                        <p>puede decirse que una película tradicional es una secuencia de imágenes fotográficas que toma una cámara y que son presentadas por un proyector cinematográfico. Este dispositivo apela a una velocidad de sustitución de imágenes que es superior a los 18 fotogramas por segundo, una característica que permite que el ojo humano cree la ilusión de continuidad.
                 
-                A nivel general, puede decirse que una película tradicional es una secuencia de imágenes fotográficas que toma una cámara y que son presentadas por un proyector cinematográfico. Este dispositivo apela a una velocidad de sustitución de imágenes que es superior a los 18 fotogramas por segundo, una característica que permite que el ojo humano cree la ilusión de continuidad.
-                
-                En este sentido, hay que subrayar que los que están considerados padres del cine son los franceses hermanos Lumière que en el año 1895 consiguieron utilizar una cámara para grabar la salida de los obreros de una fábrica de la ciudad de Lyon. Ese sería el principio de un arte que se ha convertido hoy en parte indiscutible de nuestras vidas.</p>
-                
-                
-            <hr>
-            <audio src="audio/one.mp3" controls></audio>
-            <p>De la misma forma, tampoco hay que pasar por alto la existencia de lo que se da en llamar series documentales. En este caso, la base de las mismas suelen ser hechos reales que tienen lugar en cualquier lugar del planeta y en cualquier sector. De esta manera, se han puesto de moda las series documentales que nos cuentan cómo es el día a día de los profesionales que trabajan en las áreas de urgencias de los hospitales</p>
-            <!-- <a href="https://www3.animeflv.net/" target="_BLANK">top anime</a>
-            <img src="img/one-piece-primera-temporada-960x720.jpg" alt="">
-            <img src="img/tileburnedin.jpg" alt="">
-            <img src="img/naruto.jpg" alt="">
-            <img src="img/dragon_ball_super_01.jpg" alt="">
-            <audio src="audio/one.mp3" controls></audio>
-            <video src="video/top.mp4" controls></video> -->
+                        En este sentido, hay que subrayar que los que están considerados padres del cine son los franceses hermanos Lumière que en el año 1895 consiguieron utilizar una cámara para grabar la salida de los obreros de una fábrica de la ciudad de Lyon. Ese sería el principio de un arte que se ha convertido hoy en parte indiscutible de nuestras vidas.</p>
+                        <h4 id="list-item-3">De la misma forma</h4>
+                        <p>tampoco hay que pasar por alto la existencia de lo que se da en llamar series documentales. En este caso, la base de las mismas suelen ser hechos reales que tienen lugar en cualquier lugar del planeta y en cualquier sector. De esta manera, se han puesto de moda las series documentales que nos cuentan cómo es el día a día de los profesionales que trabajan en las áreas de urgencias de los hospitales</p>
+                        <h4 id="list-item-4">cacion de pelicula</h4>
+                        <p><audio src="audio/one.mp3" controls></audio></p>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="container">

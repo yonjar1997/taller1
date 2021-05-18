@@ -1,14 +1,14 @@
 p {
-    font-size: 20px;
+    
     font-family: 'Redressed', cursive;
-    color: red;
+    color: black;
     
 }
 
 h1{
     font-weight: bold;
     font-size: 60px;
-    color: blue;
+    color:white;
 }
 
 footer {
@@ -17,8 +17,8 @@ footer {
     color: white;
 }
 
-body{
-    background-color: gray;
+.fondo{
+    background-color: #474b4e;
 }
 
 .footer{
@@ -28,12 +28,9 @@ body{
 /**  fondo de serie**/
 
 .serie{
-    background-image: url(img/serie.jpg) ;
+    
 }
 
-.anime{
-    background-image: url(img/dragon_ball_super_01.jpg);
-}
 
 .pagina_uno{
     font-weight: bold;
@@ -47,4 +44,14 @@ body{
     font-weight: bold;
     font-style: italic;
     color: greenyellow;
+}
+
+.altura{
+    height:400px;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.pelicula{
+    color:blue;
 }

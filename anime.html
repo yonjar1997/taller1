@@ -13,7 +13,7 @@
          <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="fondo">
         <header>
             
              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,7 +28,7 @@
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
                             style="--bs-scroll-height: 100px;">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="peliculas.html">Peliculas</a>
@@ -37,7 +37,10 @@
                                 <a class="nav-link" href="series.html">series</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="anime.html">anime</a>
+                                <a class="nav-link active" href="anime.html">anime</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">contacto</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -64,32 +67,83 @@
             </nav>
             <hr>
         </header>
-        <h1>Anime</h1>
-        <img src="img/one-piece-primera-temporada-960x720.jpg" alt="">
-        <div class="anime">
+        <h1 class="text-center">Anime</h1>
+        
+        <div id="carouselExampleCaptions" class="carousel slide col-8 offset-2" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="https://filmdaily.co/wp-content/uploads/2020/11/onepiece-lede-1300x731.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Top 1</h5>
+                <p>One Piece es un anime y manga escrito e ilustrado por Eiichirō Oda y actualmente es el manga más comprado en el mundo</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="https://tupersonajefavorito.com/wp-content/uploads/2018/08/Terra-Formars-cucharachas.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Top 2</h5>
+                <p>Terra Formars es un manga serializado en la revista semanal Young Jump de la editorial Shūeisha</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="https://areajugones.sport.es/wp-content/uploads/2020/09/shaman-king-2021-abril.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Top 3</h5>
+                <p>Shaman King es una serie de manga y anime creada por Hiroyuki Takei</p>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
         <main>
+            <div class="p-4">
+                <div class="row">
+                    <div id="list-example" class="list-group col-4">
+                        <a class="list-group-item list-group-item-action active" href="#list-item-1">¿por que se llama anime?</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">El anime es un fenómeno cultural y de entretenimiento</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">Además de todo lo indicado</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">video de tops de anime</a>
+                        </div>
+                        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example col border p-3 rounded altura" tabindex="0">
+                        <h4 id="list-item-1">¿por que se llama anime?</h4>
+                        <p>Si nos remitimos al diccionario de la Real Academia Española (RAE), encontraremos dos acepciones del término anime, que procede del latín amineus. La primera hace mención a una resina que se emplea para la producción de drogas y medicamentos; la segunda se utiliza en algunos países y refiere al curbaril (un árbol originario del continente americano).
 
-            <h3 class="pagina_uno">¿por que se llama anime?</h3>
+                        Anime
+                        El concepto de anime, de todos modos, aparece con más frecuencia relacionado a una palabra japonesa que alude a la animación. La noción, en este marco, se usa para nombrar a los dibujos animados de origen japonés.</p>
+                        <h4 id="list-item-2">El anime es un fenómeno cultural y de entretenimiento</h4>
+                        <p>que goza de gran popularidad a nivel internacional. Se trata de un arte que está vinculado al manga (las historietas japonesas), el cosplay (el uso de disfraces) y otras disciplinas y tendencias.
+                        
+                        Las obras de anime solían dibujarse manualmente, aunque en los últimos años se popularizaron las creaciones digitales. Aunque existen múltiples trabajos de anime con diferentes características, hay un estilo típico de la animación japonesa que empezó a forjarse en la década de 1960.
+                        
+                        Los personajes con ojos muy grandes, labios finos y cabello extraño constituyen uno de los rasgos más salientes del anime. La expresividad de los rostros, por otra parte, diferencia a estos dibujos de los más habituales en la animación occidental.</p>
+                        <h4 id="list-item-3">Además de todo lo indicado</h4>
+                        <p>hay que resaltar otra serie de datos de interés relevantes acerca del anime, tales como los siguientes:
+                        -Se considera que tiene sus orígenes a principios del siglo XX, concretamente en torno al año 1910. Momento este en el que era llamado doga e incluso senga eiga.
+                        -Hasta tal punto ha llegado la repercusión de este tipo de animación, que se han creado dentro de la misma una larga lista de especializaciones para poder satisfacer los gustos de todo tipo de público. Así, los hay para niños, para estudiantes, para amas de casa, para apasionados del deporte…En concreto, entre las especializaciones más significativas están, por ejemplo, el anime kodomo, que es el que está dirigido al público infantil en general; el shojo, que es el que está creado para satisfacer los gustos de las chicas adolescentes, o el seinen, que va dirigido a adultos varones y que se identifica por altos niveles de violencia y sexo.
+                        -Existen muchos géneros dentro del anime: maho shojo, que significa chica con poderes; el meitantei, que es el policíaco; el sentai, que versa sobre superhéroes…
+                        -Las historias de anime tenemos que establecer que suelen tener en común ciertos nexos, además de los ya indicados como son estos: presencia de personajes históricos, colores muy llamativos, “juegos con el tiempo”…
+                        -Entre los directores más importantes del mundo del anime, que se han acabado especializando en el mismo, se encuentran desde Mamoru Oshii hasta Hayao Miyazaki pasando por Studio Ghibli.
+                        
+                        “El viaje de Chihiro”, “Akira”, “Astroboy”, “Mazinger Z”, “Dragon Ball” y “Pokémon” son algunas de las series televisivas y películas de anime más populares. Muchas de ellas tienen su origen o derivaciones en el manga y en los videojuegos.</p>
+                        <h4 id="list-item-4">Video</h4>
+                        <p><video src="video/top.mp4"  class="img-fluid w-100" controls></video></p>
+                    </div>
+                </div>
+            </div>
             
-            <p class="parrafo_uno">Si nos remitimos al diccionario de la Real Academia Española (RAE), encontraremos dos acepciones del término anime, que procede del latín amineus. La primera hace mención a una resina que se emplea para la producción de drogas y medicamentos; la segunda se utiliza en algunos países y refiere al curbaril (un árbol originario del continente americano).
-
-                Anime
-                El concepto de anime, de todos modos, aparece con más frecuencia relacionado a una palabra japonesa que alude a la animación. La noción, en este marco, se usa para nombrar a los dibujos animados de origen japonés.
-                
-                El anime es un fenómeno cultural y de entretenimiento que goza de gran popularidad a nivel internacional. Se trata de un arte que está vinculado al manga (las historietas japonesas), el cosplay (el uso de disfraces) y otras disciplinas y tendencias.
-                
-                Las obras de anime solían dibujarse manualmente, aunque en los últimos años se popularizaron las creaciones digitales. Aunque existen múltiples trabajos de anime con diferentes características, hay un estilo típico de la animación japonesa que empezó a forjarse en la década de 1960.
-                
-                Los personajes con ojos muy grandes, labios finos y cabello extraño constituyen uno de los rasgos más salientes del anime. La expresividad de los rostros, por otra parte, diferencia a estos dibujos de los más habituales en la animación occidental.
-                
-                Además de todo lo indicado, hay que resaltar otra serie de datos de interés relevantes acerca del anime, tales como los siguientes:
-                -Se considera que tiene sus orígenes a principios del siglo XX, concretamente en torno al año 1910. Momento este en el que era llamado doga e incluso senga eiga.
-                -Hasta tal punto ha llegado la repercusión de este tipo de animación, que se han creado dentro de la misma una larga lista de especializaciones para poder satisfacer los gustos de todo tipo de público. Así, los hay para niños, para estudiantes, para amas de casa, para apasionados del deporte…En concreto, entre las especializaciones más significativas están, por ejemplo, el anime kodomo, que es el que está dirigido al público infantil en general; el shojo, que es el que está creado para satisfacer los gustos de las chicas adolescentes, o el seinen, que va dirigido a adultos varones y que se identifica por altos niveles de violencia y sexo.
-                -Existen muchos géneros dentro del anime: maho shojo, que significa chica con poderes; el meitantei, que es el policíaco; el sentai, que versa sobre superhéroes…
-                -Las historias de anime tenemos que establecer que suelen tener en común ciertos nexos, además de los ya indicados como son estos: presencia de personajes históricos, colores muy llamativos, “juegos con el tiempo”…
-                -Entre los directores más importantes del mundo del anime, que se han acabado especializando en el mismo, se encuentran desde Mamoru Oshii hasta Hayao Miyazaki pasando por Studio Ghibli.
-                
-                “El viaje de Chihiro”, “Akira”, “Astroboy”, “Mazinger Z”, “Dragon Ball” y “Pokémon” son algunas de las series televisivas y películas de anime más populares. Muchas de ellas tienen su origen o derivaciones en el manga y en los videojuegos.</p>
+            
                 
                 
             <hr>
@@ -103,7 +157,7 @@
             <video src="video/top.mp4" controls></video> -->
         </main>
         </div>
-        <video src="video/top.mp4" controls></video>
+        
         <footer>
             <div class="container">
                 <div class="row">
